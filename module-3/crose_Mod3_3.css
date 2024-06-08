@@ -1,0 +1,48 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.left-div, .right-div {
+    width: 45%;
+}
+
+h3 {
+    font-weight: 500;
+}
+ol, ul{
+    padding: 10px;
+    font-weight: 300;
+}
+.left-div {
+    border: 1px solid red;
+    border-radius: 15px;
+    list-style: decimal inside;
+    float: left;
+}
+
+.right-div {
+    border: 1px dashed red;
+    border-radius: 15px;
+    list-style: upper-roman inside;
+    float: left;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
