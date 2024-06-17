@@ -1,0 +1,41 @@
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0;
+    row-gap: 0;
+    margin-top: 10%;
+}
+#image-gallery div{
+    display: grid;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+}
+h1, h3 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
