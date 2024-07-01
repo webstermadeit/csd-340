@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Aaron Crose">
+    <meta name="description" content="Module 4.2 Assignment">
+    <meta name="keywords" content="HTML, CSS, web development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<link rel="stylesheet" href="crose_Mod8_2.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+    </header>
+    
+    <main>
+        
+        <div class="card">
+            <div class="card-title">Top 5 Favorite Movies</div>
+            <div class="card-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Two Characters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>One Piece: Red</td>
+                            <td>
+                                <ul>
+                                    <li>Luffy</li>
+                                    <li>Zoro</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Batman</td>
+                            <td>
+                                <ul>
+                                    <li>Batman</li>
+                                    <li>Joker</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Transformers: The Movie</td>
+                            <td>
+                                <ul>
+                                    <li>Hot Rod</li>
+                                    <li>Daniel</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Planet of the Apes</td>
+                            <td>
+                                <ul>
+                                    <li>Ceasar</li>
+                                    <li>Koba</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Parasite</td>
+                            <td>
+                                <ul>
+                                    <li>Ki-woo</li>
+                                    <li>Choi Yeon-gyo</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    
+        <br><br>
+
+    
+        <div class="card">
+            <div class="card-title">Top 5 Favorite Foods</div>
+            <div class="card-content">
+                <ol>
+                    <li><a href="https://www.allrecipes.com/recipe/24074/alysias-basic-meat-lasagna/" target="_blank">Lasagna</a></li>
+                    <li><a href="https://www.simplyrecipes.com/recipes/classic_macaroni_salad/" target="_blank">Macaroni Salad</a></li>
+                    <li><a href="https://www.foodnetwork.com/recipes/tyler-florence/fried-chicken-recipe-1914507" target="_blank">Fried Chicken</a></li>
+                    <li><a href="https://www.tasteofhome.com/recipes/best-ever-tacos/" target="_blank">Tacos</a></li>
+                    <li><a href="https://www.delish.com/cooking/recipe-ideas/a23365085/best-pancakes-recipe/" target="_blank">Pancakes</a></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> Crose | <a href="https://webstermadeit.github.io/csd-340/">Portal Home</a>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
