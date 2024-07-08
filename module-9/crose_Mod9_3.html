@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+	<meta name=“description”
+		content=“Assignment for section 9.3” />
+	<meta name=“keywords”
+		content=“css, html, bellevue, coding” />
+	<meta name=“robots”
+		content=“noindex” />
+	<meta http-equiv=“author”
+		content=“Aaron Crose” />
+	<link rel="stylesheet" href="crose_Mod9_3.css" type="text/css">
+	<script>
+        // replace text script
+        function replaceText(id) {
+            var text;
+            // assign words to blanks
+            if (id === 'name') {
+                text = "Aaron Crose";
+            } else if (id === 'movie') {
+                text = "Transformers";
+            } else if (id === 'anniversary') {
+                text = "40th";
+
+            } else if (id === 'time') {
+                text = "Ancient";
+            }
+            // replace element with new text
+            document.getElementById(id).innerHTML = text;
+        }
+    </script>
+</head>
+
+<body>
+<div id=“container”>
+<h1> Assignment 9.3: JavaScript - Part 1 </h1> 
+<h2>About Me</h2>
+<p class="intro"> Hello my name is <span id="name"> ____</span>. I usually go by Webb or Webbie because growing up this was the nickname my mom had for me. I am originally from Rock Island, IL. I currently reside in Shreveport, LA. </p>
+<p> The 1986 animated <span id="movie">____</span> movie is one of my favorites of all time. Even though it is coming up on its <span id="anniversary"> ____</span> anniversary I plan to watch it in theaters once again. I used to watch the movie so often that I knew every line. It will always be one of my favorites.</p>
+<p> Mountain path whispers,
+	<span id="time">____</span> stones tell lore of legends
+	Time hikes intertwined. </p>
+	<button onclick="replaceText('name')">Aaron Crose</button>
+    <button onclick="replaceText('movie')">Transformers</button>
+    <button onclick="replaceText('anniversary')"> 40th</button>
+    <button onclick="replaceText('time')"> Ancient</button>
+</div>
+<hr/>
+
+<address> 
+  <a href=https://www.bellevue.edu>link text</a>
+  <p>1000 Galvin Rd S</p>
+  <p>Bellevue, NE 68005</p>
+</address>
+</body>
