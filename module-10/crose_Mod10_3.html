@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+	<meta name=“description”
+		content=“Assignment for section 10.3” />
+	<meta name=“keywords”
+		content=“css, html, bellevue, coding” />
+	<meta name=“robots”
+		content=“noindex” />
+	<meta http-equiv=“author”
+		content=“Aaron Crose” />
+	<link rel="stylesheet" href="crose_Mod9_3.css" type="text/css">
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+        }
+        .hover-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover; 
+            transition: transform 0.2s; 
+        }
+        .hover-image:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+    <script>
+        function imageClicked(imageId) {
+            alert('Image with ID ' + imageId + ' was clicked!');
+        }
+    </script>
+</head>
+
+<body>
+<div id=“container”>
+<h1> Assignment 10.3: JavaScript - Part 2 </h1> 
+<div class="image-container">
+    <img src="image1.jpg" alt="Image 1" class="hover-image" id="image1" 
+         onmouseover="this.src='hover1.jpg'" 
+         onmouseout="this.src='image1.jpg'" 
+         onclick="imageClicked('image1')">
+</div>
+<div class="image-container">
+    <img src="image2.jpg" alt="Image 2" class="hover-image" id="image2" 
+         onmouseover="this.src='hover2.jpg'" 
+         onmouseout="this.src='image2.jpg'" 
+         onclick="imageClicked('image2')">
+</div>
+
+</body>
