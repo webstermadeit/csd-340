@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aaron Crose">
+    <meta name="description" content="Module 11.2 Assignment">
+    <meta name="keywords" content="HTML, CSS, web development">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    
+    <input type="text" id="textBox" placeholder="Enter text here">
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+    
+    <p id="displayArea"></p>
+    
+    <script>
+        let myArray = [];
+
+        function addElement() {
+            let textBox = document.getElementById("textBox").value;
+            myArray.push(textBox);
+            alert(`Added: ${textBox}`);
+            document.getElementById("textBox").value = '';
+        }
+
+        function deleteLastEntry() {
+            if (myArray.length > 0) {
+                let removedElement = myArray.pop();
+                alert(`Deleted: ${removedElement}`);
+            } else {
+                alert('Array is empty');
+            }
+        }
+
+        function displayArray() {
+            let displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = '';
+            myArray.forEach((element, index) => {
+                displayArea.innerHTML += `${index + 1}. ${element}<br>`;
+            });
+        }
+    </script>
+</body>
+</html>
